@@ -3,4 +3,5 @@
 使用方法：通过对当前文件夹里编辑image_camera1 = imread("figure1.bmp");选择本文件夹下的图片  
 #ray tracing program is divided into three parts, the first part is the calibration process, to obtain the relative position of the camera and the measurement domain in the world coordinate system, this program is not involved, directly using orthogonal calibration external parameters and internal parameters; The second part is the preprocessed image, which processes the images of the two cameras to obtain the initial input values of the ray tracing algorithm. The third part is 3D reconstruction based on ray tracing  
 Use: by editing image_camera1 = imread("figure1.bmp") in the current folder; Select the images in this folder  
+more url https://huntersong.com/2023/10/31/%e7%89%b9%e6%ae%8a%e7%9a%84%e6%b0%94%e6%b3%a1/  
 ![image](https://github.com/huntersong/bubbleprocessing/blob/main/bubbleimagegit/51bubble.png)
