@@ -4,4 +4,4 @@ ray tracing 程序分三个个部分，第一个部分是标定过程，获得�
 ray tracing program is divided into three parts, the first part is the calibration process, to obtain the relative position of the camera and the measurement domain in the world coordinate system, this program is not involved, directly using orthogonal calibration external parameters and internal parameters; The second part is the preprocessed image, which processes the images of the two cameras to obtain the initial input values of the ray tracing algorithm. The third part is 3D reconstruction based on ray tracing
 
 Use: by editing image_camera1 = imread("figure1.bmp") in the current folder; Select the images in this folder
-![image](https://github.com/huntersong/bubbleprocessing/blob/main/bubbleimagegit/51bubble.tif)
+![image](https://github.com/huntersong/bubbleprocessing/blob/main/bubbleimagegit/51bubble.png）
