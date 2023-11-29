@@ -5,7 +5,8 @@
 第二部分是预处理图像，对两个个相机的图像进行处理，获得光线追踪算法的输入初值，这里主要获得单个气泡的二维图像；
 第三部分是基于光线追踪的三维重建  
 使用方法：运行raytrace_main.m程序
-通过对当前文件夹里编辑image_camera1 = imread("figure1.bmp");选择本文件夹下的图片，或者其他图像，最理想的图像是单个气泡，气泡的背景颜色为白色，仅仅气泡区域存在灰度差异，便于直接进行光线追踪。
+通过对当前文件夹里编辑image_camera1 = imread("figure1.bmp");选择本文件夹下的图片，或者其他图像，最理想的图像是单个气泡，气泡的背景颜色为白色，仅仅气泡区域存在灰度差异，便于直接进行光线追踪。  
+
 This passage describes a process involving three main parts:
 
 Calibration Process:
