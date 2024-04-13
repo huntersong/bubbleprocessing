@@ -23,8 +23,8 @@ Run the "raytrace_main.m" program. Choose the image by editing the line "image_c
 more url https://huntersong.com/2023/10/31/%e7%89%b9%e6%ae%8a%e7%9a%84%e6%b0%94%e6%b3%a1/  
 ![image](https://github.com/huntersong/bubbleprocessing/blob/main/bubbleimagegit/51bubble.png)
 
-Input: a set of bubble and calibration parameters
-Ray constraints, Snell’s law and Helmholtz ray reciprocity principle (Under the light field setup)
+Input: a set of bubble and calibration parameters   
+Ray constraints, Snell’s law and Helmholtz ray reciprocity principle (Under the light field setup)   
 for all bubble slices n
 1.Silhouette method: bubble surface coordinates
 For all (x, y) in the bubble image, 
