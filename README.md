@@ -22,3 +22,31 @@ Usage:
 Run the "raytrace_main.m" program. Choose the image by editing the line "image_camera1 = imread("figure1.bmp");" in the current folder. The preferred image is one with a single bubble, where the background is white, and only the bubble region exhibits grayscale differences, facilitating direct ray tracing.
 more url https://huntersong.com/2023/10/31/%e7%89%b9%e6%ae%8a%e7%9a%84%e6%b0%94%e6%b3%a1/  
 ![image](https://github.com/huntersong/bubbleprocessing/blob/main/bubbleimagegit/51bubble.png)
+
+Input: a set of bubble and calibration parameters
+Ray constraints, Snell’s law and Helmholtz ray reciprocity principle (Under the light field setup)
+for all bubble slices n
+1.Silhouette method: bubble surface coordinates
+For all (x, y) in the bubble image, 
+the volumetric algorithm and second-order Bézier curve
+end 
+2.Light path primary judgment: gas–liquid interface normal 
+For all (x, y) in the bubble image, find extremely bright spot search in each slice
+max{Islice}
+Primary judgment of ray path & bubble interface
+θ = arctan（N·I/Imax）
+end
+3.Ray tracing to adjust the face normal
+For all (x, y) in the bubble image, iterative correction based on ray tracing
+   Create nrays rays (temp (o_1 ) ⃗) at (x, y) in the bubble image
+   For all rays at (x, y) in the bubble image (Helmholtz reciprocity principle: ray reciprocity)
+      Find temp (o_1 ) ⃗ with equation (3,4,5)
+      If <(i_1 ) ⃗×(o_2 ) ⃗, (o_1 ) ⃗>~=0, (Then we need to find (o_2 ) ⃗)
+         Create an orthonormal basis B(d1) for the column space of q-v1 and o2
+      if <(i1 - (μ2/μ1) · o1_temp_ray), n⊥>=0 
+         v1 and d1 satisfies the rays on the bubble surface
+         Break the loop for nrays (temp (o_1 ) ⃗)
+end
+   end
+end
+
